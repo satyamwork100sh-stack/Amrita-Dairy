@@ -1,0 +1,162 @@
+export const subscriptionFrequencies = [
+  {
+    id: "daily",
+    name: "Daily",
+    description: "Every single morning fresh delivery (Mon - Sun)",
+    badge: "Most Popular",
+    discountPercent: 10
+  },
+  {
+    id: "alternate",
+    name: "Alternate Days",
+    description: "Delivered every other day (Mon, Wed, Fri, Sun)",
+    badge: "Flexible",
+    discountPercent: 5
+  },
+  {
+    id: "weekly",
+    name: "Weekly",
+    description: "Delivered once a week on chosen day",
+    badge: "Bulk Save",
+    discountPercent: 5
+  },
+  {
+    id: "monthly",
+    name: "Monthly Pack",
+    description: "Pre-paid monthly scheduled calendar deliveries",
+    badge: "Best Value",
+    discountPercent: 15
+  }
+];
+
+export const initialSubscriptions = [
+  {
+    id: "SUB-801",
+    customerId: "cust-1",
+    customerName: "Satyam Kumar",
+    customerPhone: "+91 98765 43210",
+    productId: "prod-1",
+    productName: "Farm Fresh Cow Milk",
+    unit: "1 Litre",
+    quantity: 2,
+    pricePerDay: 130,
+    frequency: "Daily",
+    frequencyId: "daily",
+    preferredSlot: "Early Morning (5:30 AM - 7:30 AM)",
+    startDate: "Jan 15, 2024",
+    nextDelivery: "Tomorrow (5:30 AM)",
+    status: "Active", // Active, Paused, Cancelled
+    paymentMethod: "Autopay UPI (HDFC Bank)",
+    address: "House No. 21, Sector 5, Gomti Nagar, Lucknow",
+    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=300&q=80",
+    deliveredCount: 236
+  },
+  {
+    id: "SUB-802",
+    customerId: "cust-1",
+    customerName: "Satyam Kumar",
+    customerPhone: "+91 98765 43210",
+    productId: "prod-6",
+    productName: "Premium Farm Curd (Dahi)",
+    unit: "500g",
+    quantity: 1,
+    pricePerDay: 90,
+    frequency: "Alternate Days",
+    frequencyId: "alternate",
+    preferredSlot: "Early Morning (5:30 AM - 7:30 AM)",
+    startDate: "Feb 01, 2024",
+    nextDelivery: "Day After Tomorrow",
+    status: "Active",
+    paymentMethod: "Autopay UPI (HDFC Bank)",
+    address: "House No. 21, Sector 5, Gomti Nagar, Lucknow",
+    image: "https://images.unsplash.com/photo-1571212515416-fef01fc43637?auto=format&fit=crop&w=300&q=80",
+    deliveredCount: 112
+  },
+  {
+    id: "SUB-803",
+    customerId: "cust-2",
+    customerName: "Priya Singh",
+    customerPhone: "+91 94150 11223",
+    productId: "prod-2",
+    productName: "Pure Buffalo Milk (Full Cream)",
+    unit: "1 Litre",
+    quantity: 1,
+    pricePerDay: 75,
+    frequency: "Daily",
+    frequencyId: "daily",
+    preferredSlot: "Early Morning (5:30 AM - 7:30 AM)",
+    startDate: "Feb 10, 2024",
+    nextDelivery: "Tomorrow (6:00 AM)",
+    status: "Active",
+    paymentMethod: "Credit Card Autopay",
+    address: "Flat 302, Green Valley Apts, Aliganj Extension, Lucknow",
+    image: "https://images.unsplash.com/photo-1528750997573-59b89d56f4f7?auto=format&fit=crop&w=300&q=80",
+    deliveredCount: 210
+  },
+  {
+    id: "SUB-804",
+    customerId: "cust-3",
+    customerName: "Ankit Sharma",
+    customerPhone: "+91 98390 44556",
+    productId: "prod-3",
+    productName: "A2 Gir Cow Vedic Milk",
+    unit: "1 Litre",
+    quantity: 2,
+    pricePerDay: 190,
+    frequency: "Daily",
+    frequencyId: "daily",
+    preferredSlot: "Early Morning (5:30 AM - 7:30 AM)",
+    startDate: "Nov 20, 2023",
+    nextDelivery: "Tomorrow (6:15 AM)",
+    status: "Active",
+    paymentMethod: "NetBanking Autopay",
+    address: "Villa 18, Omaxe Residency, Amar Shaheed Path, Lucknow",
+    image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=300&q=80",
+    deliveredCount: 290
+  },
+  {
+    id: "SUB-805",
+    customerId: "cust-4",
+    customerName: "Neha Verma",
+    customerPhone: "+91 97930 77889",
+    productId: "prod-1",
+    productName: "Farm Fresh Cow Milk",
+    unit: "1 Litre",
+    quantity: 1,
+    pricePerDay: 65,
+    frequency: "Daily",
+    frequencyId: "daily",
+    preferredSlot: "Early Morning (5:30 AM - 7:30 AM)",
+    startDate: "Mar 25, 2024",
+    nextDelivery: "Paused by User",
+    status: "Paused",
+    paymentMethod: "UPI Mandate",
+    address: "Plot 89, Sector B, Mahanagar, Lucknow",
+    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=300&q=80",
+    deliveredCount: 165
+  },
+  {
+    id: "SUB-806",
+    customerId: "cust-8",
+    customerName: "Sunita Devi",
+    customerPhone: "+91 94500 66554",
+    productId: "prod-1",
+    productName: "Farm Fresh Cow Milk",
+    unit: "1 Litre",
+    quantity: 2,
+    pricePerDay: 130,
+    frequency: "Daily",
+    frequencyId: "daily",
+    preferredSlot: "Early Morning (5:30 AM - 7:30 AM)",
+    startDate: "Feb 18, 2024",
+    nextDelivery: "Tomorrow (6:30 AM)",
+    status: "Active",
+    paymentMethod: "Cash Monthly Billing",
+    address: "H-202, Sushant Golf City, Sultanpur Road, Lucknow",
+    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=300&q=80",
+    deliveredCount: 202
+  }
+];
+
+export default initialSubscriptions;
+
